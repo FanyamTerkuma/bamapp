@@ -4,13 +4,19 @@
 
 body {
   font-family: 'poppins', sans-serif;
+  @apply antialiased
 }
 
-p {
-  font-family: 'Josefin Sans', sans-serif;
+@layer components {
+  .mono {
+    font-family: 'Space Mono', monospace;
+  }
 
-}
+  .form {
+    @apply flex flex-col rounded-lg gap-2 justify-evenly bg-[#ffffff] shadow-xl p-2
+  }
 
-.styledText {
-  font-family: 'Space Mono', monospace;
+  .styledText {
+    font-family: 'Josefin Sans', sans-serif;
+  }
 }
