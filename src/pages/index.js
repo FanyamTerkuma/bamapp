@@ -8,5 +8,7 @@ import { default as User } from './users/Users';
 import { default as AddUser } from './users/AddUser';
 import { default as AddSavings } from './savings/AddSavings';
 import { default as AddLoan } from './loans/AddLoan';
+import { default as AddRepayment } from './repayment/AddRepayment';
+import { default as Register } from './login/Register';
 
-export { Home, Loan, Login, Repayment, Savings, Summary, User, AddUser, AddSavings, AddLoan };
+export { Home, Loan, Login, Repayment, Savings, Summary, User, AddUser, AddSavings, AddLoan, AddRepayment, Register };

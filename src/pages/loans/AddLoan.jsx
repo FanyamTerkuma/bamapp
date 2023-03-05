@@ -13,10 +13,10 @@ function AddLoan() {
                 <Button buttonName="back to list" />
             </Link>
             <Form title="add loan">
-                <Input inputLabel="amount loaned*" type="text" />
+                <Input inputLabel="amount loaned*" type="number" />
                 <CheckBox label="interest*" />
                 <CheckBox label="activate*" />
-                <Input inputLabel="balance*" type="text" />
+                <Input inputLabel="balance*" type="number" />
                 <Input inputLabel="purpose*" type="text" />
                 <Dropdown inputLabel="svn*" options={svnList} />
                 <Button buttonName="add loan" />
