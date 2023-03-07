@@ -18,6 +18,8 @@ function AddLoan() {
                 <CheckBox label="activate*" />
                 <Input inputLabel="balance*" type="number" />
                 <Input inputLabel="purpose*" type="text" />
+                <Input inputLabel="Guarantor(svn) 1*" type="text" />
+                <Input inputLabel="Guarantor(svn) 2*" type="text" />
                 <Dropdown inputLabel="svn*" options={svnList} />
                 <Button buttonName="add loan" />
             </Form>
