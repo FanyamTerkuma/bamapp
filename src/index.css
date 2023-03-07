@@ -16,6 +16,10 @@ body {
     font-family: 'PT Serif', serif;
   }
 
+  button:disabled {
+    @apply px-3 py-2 uppercase opacity-50
+  }
+
   .form {
     @apply flex flex-col rounded-lg gap-2 justify-evenly bg-[#ffffff] shadow-2xl p-2
   }
