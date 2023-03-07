@@ -25,7 +25,7 @@ function Login() {
     });
 
     return (
-        <div className="my-20 ">
+        <div className="flex h-96 items-center justify-center ">
             <Form onSubmit={handleSubmit} title="Log in">
                 <Input
                     className={errors.username && touched.username ? 'error_input' : ''}
