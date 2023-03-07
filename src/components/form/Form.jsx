@@ -1,11 +1,13 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-function Form({ title, children }) {
+function Form({ title, children, ...props }) {
     return (
         <div className="flex justify-center">
             <div className="form">
                 <h1 className="w-full text-center font-mono text-xl uppercase">{title}</h1>
-                <form className="flex flex-col">{children}</form>
+                <form {...props} className="flex flex-col">
+                    {children}
+                </form>
             </div>
         </div>
     );
