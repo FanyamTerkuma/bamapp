@@ -1,19 +1,20 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-function Form({ title, children, ...props }) {
+import { Form } from 'formik';
+function CustomForm({ title, children, ...props }) {
     return (
         <div className="flex justify-center">
             <div className="form">
                 <h1 className="w-full text-center font-mono text-xl uppercase">{title}</h1>
-                <form {...props} className="flex flex-col">
+                <Form {...props} className="flex flex-col">
                     {children}
-                </form>
+                </Form>
             </div>
         </div>
     );
 }
-Form.propTypes = {
+CustomForm.propTypes = {
     title: PropTypes.string,
     children: PropTypes.node
 };
-export default Form;
+export default CustomForm;
