@@ -24,12 +24,12 @@ function Carousel({ children: slides, autoslide = false, autoslideInterval = 500
                 <img className="h-screen w-full object-cover " src={slides[currentImage]} />
             </div>
             {/* make this content dynamic */}
-            <div className="absolute inset-44  mx-auto flex h-fit flex-col gap-4 rounded bg-slate-200 bg-opacity-50 py-4 px-2  ">
+            <div className="absolute inset-44  mx-auto flex h-[60%] flex-col justify-center gap-4 rounded bg-slate-200 bg-opacity-50 py-4 px-3  ">
                 <p className="mono  text-xl font-light tracking-wide ">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quis repudiandae, tempore reiciendis neque assumenda est sit beatae veritatis dolores
                     nulla ab. Quis, atque cum? Facere nulla suscipit corrupti alias excepturi eligendi deleniti pariatur. Asperiores, numquam. Dignissimos quidem eos vel.
                 </p>
-                <div className="mono">
+                <div className="mono ">
                     <Button buttonName="Learn  more" />
                 </div>
             </div>

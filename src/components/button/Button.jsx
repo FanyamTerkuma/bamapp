@@ -5,7 +5,7 @@ function Button({ icon, buttonType, className, buttonName, ...props }) {
     return (
         <button
             {...props}
-            className={`${className ? className : 'py-2 px-3 uppercase'} mono mx-2 rounded-md text-white  hover:shadow-lg 
+            className={`${className ? className : 'py-3 px-4 uppercase'} mono mx-2 rounded-md text-white  hover:shadow-lg
                 ${buttonType === 'delete' ? 'bg-red-600' : 'bg-blue-400'}`}>
             {icon ? (
                 <p className="flex items-center justify-center gap-1">

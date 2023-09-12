@@ -20,7 +20,7 @@ function Login() {
         );
     };
     return (
-        <div className="flex h-96 items-center justify-center ">
+        <div className="flex h-screen items-center justify-center ">
             <Formik
                 initialValues={{
                     username: '',
